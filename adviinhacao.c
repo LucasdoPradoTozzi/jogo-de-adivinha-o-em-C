@@ -5,5 +5,12 @@ int main() {
     printf("*Bem vindo ao nosso jogo de advinhação!*\n");
     printf("****************************************\n");
 
-    return 0;
+    int numerosecreto = 42;
+
+    int chute;
+
+    printf("Qual o seu chute? ");
+    scanf("%d", &chute);
+    printf("Seu chute foi %d\n", chute);
+
 }
