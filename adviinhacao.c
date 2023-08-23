@@ -20,6 +20,7 @@ int main() {
         if(acertou) {
             printf("Parabéns, você acertou!\n");
             printf("Jogue novamente, você é um bom jogador!\n");
+            break;
         }
         else {
             int maior = chute > numerosecreto;
