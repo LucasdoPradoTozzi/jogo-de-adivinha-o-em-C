@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     printf("****************************************\n");
@@ -39,12 +40,12 @@ int main() {
             }
             tentativa++;
 
-            double pontosperdidos = (chute - numerosecreto) / 2.0;
+            double pontosperdidos = abs(chute - numerosecreto) / (double)2;
             pontos = pontos - pontosperdidos;
 
         }
     
     printf("Fim de jogo!\n");
     printf("Você acertou em %d tentativas!\n", tentativa);
-    printf("Você fez %f pontos!\n", pontos);
+    printf("Você fez %.1f pontos!\n", pontos);
 }
